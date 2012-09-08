@@ -32,9 +32,9 @@
     <!-- grep console -->
     <child location="http://eclipse.schedenig.name"/>
     <!-- jee -->
-    <child location="wtp-3.4.1/"/>
+    <child location="wtp-3.4.1"/>
+    <child location="gef-2.8.1"/>
+    <child location="emf-2.8.1"/>
     <child location="http://download.eclipse.org/eclipse/updates/3.8-M-builds"/>
-    <child location="http://download.eclipse.org/modeling/emf/updates/milestones/"/>
-    <child location="http://download.eclipse.org/tools/gef/updates/milestones/"/>
   </children>
 </repository>

@@ -6,14 +6,13 @@ build_dir=$ees_dir/build
 p2_builder_dir=$ees_dir/builder/eclipse
 
 ees_name="eclipse-jee-3.8"
-ees_version="1.0.0"
 
 p2_repo_url="file:/opt/MyEclipse/updatesite"
 target_platform_dir=$build_dir/target-platform
 
 source_platform_archive=$1
 p2_target_profile=PlatformProfile
-p2_target_installIU="jp.gr.java_conf.ussiy.app.propedit.feature.group/6.0.0,org.eclipse.egit.feature.group,org.eclipse.egit.import.feature.group,org.eclipse.egit.mylyn.feature.group,org.eclipse.egit.psf.feature.group,org.eclipse.jdt.feature.group,org.eclipse.jgit.feature.group,org.eclipse.jst.server_adapters.ext.feature.feature.group,org.eclipse.jst.server_adapters.feature.feature.group,org.eclipse.jst.server_core.feature.feature.group,org.eclipse.jst.server_ui.feature.feature.group,org.eclipse.m2e.feature.feature.group,org.eclipse.m2e.wtp.feature.feature.group,org.eclipse.mylyn.builds.feature.group,org.eclipse.mylyn.git.feature.group,org.eclipse.mylyn.hudson.feature.group,org.eclipse.mylyn.ide_feature.feature.group,org.eclipse.mylyn.java_feature.feature.group,org.eclipse.mylyn.tasks.ide.feature.group,org.eclipse.mylyn.team_feature.feature.group,org.eclipse.mylyn.versions.feature.group,org.eclipse.mylyn_feature.feature.group,org.eclipse.wst.server_adapters.feature.feature.group,org.eclipse.wst.server_core.feature.feature.group,org.eclipse.wst.server_ui.feature.feature.group,org.eclipse.wst.xml_core.feature.feature.group,org.eclipse.wst.xml_ui.feature.feature.group,org.testng.eclipse.feature.group,AnyEditTools.feature.group,com.googlecode.eclipse.navigatorext.features.feature.group"
+p2_target_installIU="jp.gr.java_conf.ussiy.app.propedit.feature.group/6.0.0,org.eclipse.egit.feature.group,org.eclipse.egit.import.feature.group,org.eclipse.egit.mylyn.feature.group,org.eclipse.egit.psf.feature.group,org.eclipse.jdt.feature.group,org.eclipse.jgit.feature.group,org.eclipse.jst.server_adapters.ext.feature.feature.group,org.eclipse.jst.server_adapters.feature.feature.group,org.eclipse.jst.server_core.feature.feature.group,org.eclipse.jst.server_ui.feature.feature.group,org.eclipse.m2e.feature.feature.group,org.eclipse.m2e.wtp.feature.feature.group,org.eclipse.mylyn.builds.feature.group,org.eclipse.mylyn.git.feature.group,org.eclipse.mylyn.hudson.feature.group,org.eclipse.mylyn.ide_feature.feature.group,org.eclipse.mylyn.java_feature.feature.group,org.eclipse.mylyn.tasks.ide.feature.group,org.eclipse.mylyn.team_feature.feature.group,org.eclipse.mylyn.versions.feature.group,org.eclipse.mylyn_feature.feature.group,org.eclipse.wst.server_adapters.feature.feature.group,org.eclipse.wst.server_core.feature.feature.group,org.eclipse.wst.server_ui.feature.feature.group,org.eclipse.wst.xml_core.feature.feature.group,org.eclipse.wst.xml_ui.feature.feature.group,org.eclipse.wst.xsl.feature.feature.group,org.testng.eclipse.feature.group,AnyEditTools.feature.group,com.googlecode.eclipse.navigatorext.features.feature.group"
 
 #######################################
 # function definition
@@ -76,6 +75,10 @@ assemble() {
     -profileProperties org.eclipse.update.install.features=true \
     -p2.os ${p2_target_os} \
     -p2.arch ${p2_target_arch}
+  if [ $? != 0 ] ; then
+    echo "installed plugins failed"
+    exit 1;
+  fi
 
   echo "### post install"
 
@@ -85,7 +88,7 @@ assemble() {
     cat ./plugin_customization_e38.ini >> $plugin_customization
   fi
 
-  ees_archive_name=${ees_name}-${ees_version}-${build_time}-${p2_target_os}-${p2_target_arch}
+  ees_archive_name=${ees_name}-${build_time}-${p2_target_os}-${p2_target_arch}
 
   pushd `pwd` >/dev/null
   cd $target_platform_dir
