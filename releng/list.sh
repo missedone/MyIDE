@@ -4,7 +4,7 @@ JAVA_HOME=/usr/java/default/
 ees_dir=/opt/ees
 p2_builder_dir=$ees_dir/builder/eclipse
 if test "x$1" = "x"; then
-  p2_repo_url="file:/opt/ees/myupdatesite/"
+  p2_repo_url="file:/opt/MyEclipse/updatesite"
 else
   p2_repo_url=$1
 fi

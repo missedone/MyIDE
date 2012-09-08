@@ -8,7 +8,7 @@ p2_builder_dir=$ees_dir/builder/eclipse
 ees_name="eclipse-jee-3.8"
 ees_version="1.0.0"
 
-p2_repo_url="file:/opt/ees/myupdatesite/"
+p2_repo_url="file:/opt/MyEclipse/updatesite"
 target_platform_dir=$build_dir/target-platform
 
 source_platform_archive=$1
