@@ -2,9 +2,13 @@ Unoffical Eclipse 3.8 JEE Package
 =========
 
 Scripts to build my Eclipse JEE Packages based on e38
+However, I still encourage you all to use Eclipse Juno (aka. 4.2 release) to drive Eclipse forward, thanks:)
 
 ## Package Details
 Tools for Java developers creating Java EE and Web applications, including a Java IDE, M2E, Mylyn and others.
+You can download the package here:
+Windows: http://navigatorext.eclipselabs.org.codespot.com/files/eclipse-jee-3.8.1-20121016_1319-win32-x86.zip
+Linux 64-bit: To Be Done
 
 ## Feature List
 jp.gr.java_conf.ussiy.app.propedit.feature.group 6.0.0.
