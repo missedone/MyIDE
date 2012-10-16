@@ -12,16 +12,22 @@ target_platform_dir=$build_dir/target-platform
 
 source_platform_archive=$1
 p2_target_profile=PlatformProfile
-p2_target_installIU="jp.gr.java_conf.ussiy.app.propedit.feature.group/6.0.0,org.eclipse.egit.feature.group,org.eclipse.egit.import.feature.group,org.eclipse.egit.mylyn.feature.group,org.eclipse.egit.psf.feature.group,org.eclipse.jdt.feature.group,org.eclipse.jgit.feature.group,org.eclipse.jst.server_adapters.ext.feature.feature.group,org.eclipse.jst.server_adapters.feature.feature.group,org.eclipse.jst.server_core.feature.feature.group,org.eclipse.jst.server_ui.feature.feature.group,org.eclipse.m2e.feature.feature.group,org.eclipse.m2e.wtp.feature.feature.group,org.eclipse.mylyn.builds.feature.group,org.eclipse.mylyn.git.feature.group,org.eclipse.mylyn.hudson.feature.group,org.eclipse.mylyn.ide_feature.feature.group,org.eclipse.mylyn.java_feature.feature.group,org.eclipse.mylyn.tasks.ide.feature.group,org.eclipse.mylyn.team_feature.feature.group,org.eclipse.mylyn.versions.feature.group,org.eclipse.mylyn_feature.feature.group,org.eclipse.wst.server_adapters.feature.feature.group,org.eclipse.wst.server_core.feature.feature.group,org.eclipse.wst.server_ui.feature.feature.group,org.eclipse.wst.xml_core.feature.feature.group,org.eclipse.wst.xml_ui.feature.feature.group,org.eclipse.wst.xsl.feature.feature.group,org.testng.eclipse.feature.group,AnyEditTools.feature.group,com.googlecode.eclipse.navigatorext.features.feature.group"
+p2_target_installIU="jp.gr.java_conf.ussiy.app.propedit.feature.group/6.0.0,org.eclipse.egit.feature.group,org.eclipse.egit.import.feature.group,org.eclipse.egit.mylyn.feature.group,org.eclipse.egit.psf.feature.group,org.eclipse.jdt.feature.group,org.eclipse.jgit.feature.group,org.eclipse.jst.server_adapters.ext.feature.feature.group,org.eclipse.jst.server_adapters.feature.feature.group,org.eclipse.jst.server_core.feature.feature.group,org.eclipse.jst.server_ui.feature.feature.group,org.eclipse.m2e.feature.feature.group,org.eclipse.m2e.wtp.feature.feature.group,org.eclipse.mylyn.builds.feature.group,org.eclipse.mylyn.git.feature.group,org.eclipse.mylyn.hudson.feature.group,org.eclipse.mylyn.ide_feature.feature.group,org.eclipse.mylyn.java_feature.feature.group,org.eclipse.mylyn.tasks.ide.feature.group,org.eclipse.mylyn.team_feature.feature.group,org.eclipse.mylyn.versions.feature.group,org.eclipse.mylyn_feature.feature.group,org.eclipse.wst.server_adapters.feature.feature.group,org.eclipse.wst.server_core.feature.feature.group,org.eclipse.wst.server_ui.feature.feature.group,org.eclipse.wst.xml_core.feature.feature.group,org.eclipse.wst.xml_ui.feature.feature.group,org.eclipse.wst.xsl.feature.feature.group,org.eclipse.jst.webpageeditor.feature.feature.group,org.eclipse.wst.web_ui.feature.feature.group,org.eclipse.jst.web_ui.feature.feature.group,org.eclipse.jst.enterprise_ui.feature.feature.group,org.testng.eclipse.feature.group,AnyEditTools.feature.group,com.googlecode.eclipse.navigatorext.features.feature.group"
 
 #######################################
 # function definition
 #######################################
 assemble() {
 
+  base_dir=$(dirname $0)
   source_platform_archive=$1
   p2_target_profile=$2
   p2_target_installIU=$3
+  dist_dir=$4
+  if [ -z "$dist_dir" ]; then
+    dist_dir=$base_dir/../dist
+  fi
+  mkdir $dist_dir
 
   p2_target=$target_platform_dir/$ees_name
   build_time=`date +%Y%m%d_%H%M`
@@ -82,10 +88,10 @@ assemble() {
 
   echo "### post install"
 
-  if [ -f ./plugin_customization_e38.ini ]; then
+  if [ -f $base_dir/plugin_customization_e38.ini ]; then
     plugin_customization=`find ${p2_target} -name plugin_customization.ini -print | grep 'org.eclipse'`
     echo "#### append web proxies settings to $plugin_customization"
-    cat ./plugin_customization_e38.ini >> $plugin_customization
+    cat $base_dir/plugin_customization_e38.ini >> $plugin_customization
   fi
 
   ees_archive_name=${ees_name}-${build_time}-${p2_target_os}-${p2_target_arch}
@@ -95,13 +101,15 @@ assemble() {
   echo "##### package to ${ees_archive_name}"
   if [[ "$source_platform_archive" == *.tar.gz ]]; then
     tar -zcf ${build_dir}/${ees_archive_name}.tar.gz ./
+    mv ${build_dir}/${ees_archive_name}.tar.gz $dist_dir
   else
     zip -q -r ${build_dir}/${ees_archive_name}.zip ./
+    mv ${build_dir}/${ees_archive_name}.zip $dist_dir
   fi
   popd >/dev/null
 
   echo "build complete successfully"
 }  
 
-source_platform_archive=/opt/ees/binaries/eclipse-platform-3.8-M20120905-1000-win32.zip
+source_platform_archive=$1
 assemble $source_platform_archive $p2_target_profile $p2_target_installIU

@@ -6,35 +6,37 @@
     <property name="p2.timestamp" value="1243822502499"/>
   </properties>
   <children size="12">
-	<!-- ALM plugins -->
+    <!-- ALM plugins -->
     <!-- egit -->
-    <child location="http://download.eclipse.org/egit/updates-nightly"/>
+    <child location="http://download.eclipse.org/egit/updates"/>
     <child location="http://download.eclipse.org/technology/subversive/1.0/update-site/"/>
     <child location="http://community.polarion.com/projects/subversive/download/eclipse/3.0/update-site/"/>
     <child location="http://community.polarion.com/projects/subversive/download/integrations/update-site/"/>
     <!-- m2e -->
-    <child location="https://repository.sonatype.org/content/repositories/forge-sites/m2e/1.2.0/N/LATEST/"/>
-    <child location="http://download.jboss.org/jbosstools/builds/staging/m2e-wtp-juno/all/"/>
-    <child location="https://repository.sonatype.org/content/repositories/forge-sites/m2e-extras/0.15.0/N/0.15.0.201206251206/"/>
-    <child location="https://repository.sonatype.org/content/repositories/forge-sites/m2eclipse-tycho/0.6.0/N/0.6.0.201205210032/"/>
+    <child location="http://download.eclipse.org/technology/m2e/releases"/>
+    <child location="http://download.eclipse.org/m2e-wtp/releases/"/>
     <!-- mylyn -->
-    <child location="http://download.eclipse.org/mylyn/snapshots/weekly"/>
+    <child location="http://download.eclipse.org/mylyn/releases/latest"/>
+    <!--
+    <child location="http://download.eclipse.org/mylyn/incubator/3.8"/>
+    <child location="http://download.eclipse.org/r4e/updates/"/>
+    -->
     <!-- utils plugins -->
     <child location="http://beust.com/eclipse"/>
     <child location="http://findbugs.cs.umd.edu/eclipse"/>
     <child location="http://andrei.gmxhome.de/eclipse/"/>
     <child location="http://propedit.sourceforge.jp/eclipse/updates/"/>
     <child location="https://sourceforge.net/projects/bluetools/files/navigatorext/updatesite/nax_1.1.2.201201311435/"/>
-    <!-- dltk for ruby -->
+    <!-- dltk for ruby 
     <child location="http://download.eclipse.org/technology/dltk/updates-dev/4.0-nightly/"/>
-    <!-- jboss tools -->
+    -->
+    <!-- jboss tools 
     <child location="http://download.jboss.org/jbosstools/builds/nightly/trunk/latest/all/repo/"/>
+    -->
     <!-- grep console -->
     <child location="http://eclipse.schedenig.name"/>
     <!-- jee -->
-    <child location="wtp-3.4.1"/>
-    <child location="gef-2.8.1"/>
-    <child location="emf-2.8.1"/>
+    <child location="http://download.eclipse.org/releases/maintenance"/>
     <child location="http://download.eclipse.org/eclipse/updates/3.8-M-builds"/>
   </children>
 </repository>
