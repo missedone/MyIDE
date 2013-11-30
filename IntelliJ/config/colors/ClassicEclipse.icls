@@ -144,14 +144,12 @@
     <option name="DEFAULT_BRACES">
       <value>
         <option name="FOREGROUND" value="99" />
-        <option name="FONT_TYPE" value="2" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
     <option name="DEFAULT_BRACKETS">
       <value>
         <option name="FOREGROUND" value="99" />
-        <option name="FONT_TYPE" value="2" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -294,7 +292,6 @@
     <option name="DEFAULT_PARENTHS">
       <value>
         <option name="FOREGROUND" value="99" />
-        <option name="FONT_TYPE" value="2" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
