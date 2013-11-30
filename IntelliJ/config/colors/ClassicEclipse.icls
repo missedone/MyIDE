@@ -19,7 +19,7 @@
   <attributes>
     <option name="ABSTRACT_CLASS_NAME_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="6600" />
+        <option name="FOREGROUND" value="0" />
       </value>
     </option>
     <option name="ANNOTATION_NAME_ATTRIBUTES">
@@ -30,7 +30,7 @@
     </option>
     <option name="ANONYMOUS_CLASS_NAME_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="6600" />
+        <option name="FOREGROUND" value="0" />
       </value>
     </option>
     <option name="BAD_CHARACTER">
@@ -48,7 +48,7 @@
     </option>
     <option name="CLASS_NAME_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="6600" />
+        <option name="FOREGROUND" value="0" />
       </value>
     </option>
     <option name="CONSOLE_ERROR_OUTPUT">
@@ -435,7 +435,8 @@
     </option>
     <option name="PARAMETER_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="6600" />
+        <option name="FOREGROUND" value="0" />
+        <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="SEARCH_RESULT_ATTRIBUTES">
@@ -451,7 +452,7 @@
     </option>
     <option name="STATIC_METHOD_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="7f9fbf" />
+        <option name="FOREGROUND" value="0" />
       </value>
     </option>
     <option name="TEMPLATE_VARIABLE_ATTRIBUTES">
