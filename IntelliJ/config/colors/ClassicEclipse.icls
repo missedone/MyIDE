@@ -24,7 +24,7 @@
     </option>
     <option name="ANNOTATION_NAME_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="990099" />
+        <option name="FOREGROUND" value="7fa0be" />
         <option name="FONT_TYPE" value="3" />
       </value>
     </option>
@@ -145,7 +145,6 @@
       <value>
         <option name="FOREGROUND" value="99" />
         <option name="FONT_TYPE" value="2" />
-        <option name="EFFECT_COLOR" value="99" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -153,7 +152,6 @@
       <value>
         <option name="FOREGROUND" value="99" />
         <option name="FONT_TYPE" value="2" />
-        <option name="EFFECT_COLOR" value="99" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -219,7 +217,6 @@
       <value>
         <option name="FOREGROUND" value="ff5809" />
         <option name="FONT_TYPE" value="2" />
-        <option name="EFFECT_COLOR" value="ff5809" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -231,7 +228,6 @@
     <option name="DEFAULT_INSTANCE_FIELD">
       <value>
         <option name="FOREGROUND" value="c0" />
-        <option name="EFFECT_COLOR" value="c0" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -272,7 +268,6 @@
       <value>
         <option name="FOREGROUND" value="ff5809" />
         <option name="FONT_TYPE" value="2" />
-        <option name="EFFECT_COLOR" value="ff5809" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -300,7 +295,6 @@
       <value>
         <option name="FOREGROUND" value="99" />
         <option name="FONT_TYPE" value="2" />
-        <option name="EFFECT_COLOR" value="99" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -335,7 +329,6 @@
       <value>
         <option name="FOREGROUND" value="99" />
         <option name="FONT_TYPE" value="2" />
-        <option name="EFFECT_COLOR" value="99" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -399,7 +392,6 @@
     <option name="INSTANCE_FIELD_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="c0" />
-        <option name="EFFECT_COLOR" value="c0" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
