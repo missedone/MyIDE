@@ -1,0 +1,49 @@
+{
+	"bold_folder_labels": true,
+	"caret_extra_bottom": 0,
+	"caret_extra_top": 0,
+	"caret_extra_width": 0,
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"default_line_ending": "unix",
+	"enable_telemetry": false,
+	"flatui_folder_icons": true,
+	"flatui_thin_tabs": true,
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		".settings",
+		"CVS",
+		"nbproject"
+	],
+	"font_face": "DejaVu Sans Mono",
+	"font_options":
+	[
+		"directwrite"
+	],
+	"font_size": 10,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage",
+		"HexViewer",
+		"StringUtilities",
+		"sublimelint",
+		"SublimeLinter",
+		"Package Control",
+		"SublimePuppet",
+		"GoSublime",
+		"Table Editor",
+		"Knockdown",
+		"CTags",
+		"Markdown"
+	],
+	"tab_size": 2,
+	"theme": "FlatUI 3.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"update_check": false,
+	"word_wrap": "auto",
+	"wrap_width": 150
+}
