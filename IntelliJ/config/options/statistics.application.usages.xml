@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+  <component name="StatisticsApplicationUsages">
+    <group name="file-type">
+      <project id="sp-oo-actions" values="PLAIN_TEXT,Eclipse,Markdown,JAVA,UNKNOWN,IDEA_MODULE,XML" />
+      <project id="ganymed-ssh2" values="UNKNOWN,XML,Eclipse,PLAIN_TEXT,JAVA,HTML,IDEA_MODULE" />
+      <project id="ps" values="IDEA_MODULE,Properties,PLAIN_TEXT,Eclipse,UNKNOWN,XML,JAVA" />
+      <project id="Lottery" values="UNKNOWN,JSON,JavaScript,CSS,PLAIN_TEXT,IDEA_MODULE,XML" />
+      <project id="PFP-HP" values="UNKNOWN,ARCHIVE,Images,IDEA_MODULE,Properties,SPI,XML,SQL,HTML,JAVA,PLAIN_TEXT" />
+      <project id="sp-extension-parent" values="UNKNOWN,PLAIN_TEXT,JavaScript,XML,CSS,Eclipse,Markdown,HTML,JAVA,IDEA_MODULE,Images,Properties,SQL" />
+      <project id="sp-jsch" values="Markdown,ARCHIVE,IDEA_MODULE,Eclipse,JAVA,XML,PLAIN_TEXT,UNKNOWN" />
+      <project id="PFP" values="XML,Properties,ARCHIVE,IDEA_MODULE,SQL,PLAIN_TEXT,SPI,HTML,Images,UNKNOWN,JAVA" />
+      <project id="pfp-samples" values="Eclipse,Images,UNKNOWN,PLAIN_TEXT,IDEA_MODULE,XML" />
+      <project id="trunk" values="HTML,UNKNOWN,Eclipse,PLAIN_TEXT,CLASS,XML,IDEA_MODULE,JAVA" />
+      <project id="generic-provider" values="IDEA_MODULE,UNKNOWN,Eclipse,JAVA,XML" />
+      <project id="sp-extension" values="CSS,Markdown,IDEA_MODULE,HTML,Images,SQL,UNKNOWN,Eclipse,Properties,PLAIN_TEXT,XML,JavaScript,JAVA" />
+    </group>
+    <group name="javaScript Frameworks">
+      <project id="Lottery" values="Node.js Core Modules v0.10.24" />
+    </group>
+    <group name="frameworks">
+      <project id="ps" values="Spring,jpa,web" />
+      <project id="sp-extension-parent" values="Spring,web" />
+      <project id="PFP" values="ejb,jpa,web" />
+      <project id="generic-provider" values="web" />
+      <project id="sp-extension" values="Spring,web" />
+    </group>
+    <group name="JavaScript versions">
+      <project id="sp-oo-actions" values="DEFAULT" />
+      <project id="ganymed-ssh2" values="DEFAULT" />
+      <project id="ps" values="DEFAULT" />
+      <project id="Lottery" values="DEFAULT" />
+      <project id="PFP-HP" values="DEFAULT" />
+      <project id="sp-extension-parent" values="DEFAULT" />
+      <project id="sp-jsch" values="DEFAULT" />
+      <project id="PFP" values="DEFAULT" />
+      <project id="pfp-samples" values="DEFAULT" />
+      <project id="trunk" values="DEFAULT" />
+      <project id="generic-provider" values="DEFAULT" />
+      <project id="sp-extension" values="DEFAULT" />
+    </group>
+    <group name="language-level">
+      <project id="sp-oo-actions" values="JDK_1_6" />
+      <project id="ganymed-ssh2" values="JDK_1_6,JDK_1_5" />
+      <project id="ps" values="JDK_1_6" />
+      <project id="Lottery" values="JDK_1_6" />
+      <project id="PFP-HP" values="JDK_1_6" />
+      <project id="sp-extension-parent" values="JDK_1_6,JDK_1_7" />
+      <project id="sp-jsch" values="JDK_1_6" />
+      <project id="PFP" values="JDK_1_6" />
+      <project id="pfp-samples" values="JDK_1_6" />
+      <project id="trunk" values="JDK_1_6" />
+      <project id="generic-provider" values="JDK_1_6" />
+      <project id="sp-extension" values="JDK_1_6,JDK_1_7" />
+    </group>
+    <group name="vcs">
+      <project id="sp-oo-actions" values="Git" />
+      <project id="ps" values="Git" />
+      <project id="PFP-HP" values="Git" />
+      <project id="sp-extension-parent" values="Git" />
+      <project id="sp-jsch" values="Git" />
+      <project id="PFP" values="Git" />
+      <project id="pfp-samples" values="Git" />
+      <project id="sp-extension" values="Git" />
+    </group>
+    <group name="libraries">
+      <project id="ps" values="spring,BeanValidation,TransactionJavaee,spring-mvc,spring-security" />
+      <project id="Lottery" values="javaScript" />
+      <project id="PFP-HP" values="JMS,EJB,TransactionJavaee,spring" />
+      <project id="sp-extension-parent" values="spring-mvc,spring,TransactionJavaee,CDI" />
+      <project id="PFP" values="JMS,TransactionJavaee,EJB,spring" />
+      <project id="pfp-samples" values="spring,TransactionJavaee" />
+      <project id="sp-extension" values="CDI,spring,spring-mvc,TransactionJavaee" />
+    </group>
+    <group name="run-configuration-type-temp">
+      <project id="sp-oo-actions" values="JUnit" />
+      <project id="sp-extension-parent" values="JUnit" />
+    </group>
+    <group name="spring">
+      <project id="ps" values="facet_xmlContext" />
+      <project id="sp-extension-parent" values="facet_xmlContext,facet_xmlContext" />
+      <project id="sp-extension" values="facet_xmlContext,facet_xmlContext" />
+    </group>
+    <group name="run-configuration-type">
+      <project id="Lottery" values="NodeJSConfigurationType" />
+      <project id="sp-extension-parent" values="JBossConfiguration.Local" />
+      <project id="generic-provider" values="JBossConfiguration.Local" />
+      <project id="sp-extension" values="JBossConfiguration.Local" />
+    </group>
+    <group name="javaScript Scope Usages">
+      <project id="sp-oo-actions" values="Project,Project" />
+      <project id="ganymed-ssh2" values="Project,Project" />
+      <project id="ps" values="Project,Project" />
+      <project id="Lottery" values="Project,Project,Project,Project,Directory" />
+      <project id="PFP-HP" values="Project,Project" />
+      <project id="sp-extension-parent" values="Project,Project" />
+      <project id="sp-jsch" values="Project,Project" />
+      <project id="PFP" values="Project,Project" />
+      <project id="pfp-samples" values="Project,Project" />
+      <project id="trunk" values="Project,Project" />
+      <project id="generic-provider" values="Project,Project" />
+      <project id="sp-extension" values="Project,Project" />
+    </group>
+    <group name="module type">
+      <project id="sp-oo-actions" values="JAVA_MODULE" />
+      <project id="ganymed-ssh2" values="JAVA_MODULE" />
+      <project id="ps" values="JAVA_MODULE" />
+      <project id="Lottery" values="WEB_MODULE" />
+      <project id="PFP-HP" values="JAVA_MODULE" />
+      <project id="sp-extension-parent" values="JAVA_MODULE" />
+      <project id="sp-jsch" values="JAVA_MODULE" />
+      <project id="PFP" values="JAVA_MODULE" />
+      <project id="pfp-samples" values="JAVA_MODULE" />
+      <project id="trunk" values="JAVA_MODULE" />
+      <project id="generic-provider" values="JAVA_MODULE" />
+      <project id="sp-extension" values="JAVA_MODULE" />
+    </group>
+  </component>
+  <component name="UsageTrigger">
+    <counts>
+      <entry feature="CreateFile.CreateFileAction" count="3" />
+      <entry feature="execute.Application.Run" count="2" />
+      <entry feature="execute.JBossConfiguration.Debug" count="39" />
+      <entry feature="execute.JBossConfiguration.Run" count="35" />
+      <entry feature="execute.JUnit.Debug" count="23" />
+      <entry feature="execute.JUnit.Run" count="132" />
+      <entry feature="spring.SpringConfigurationCheck.FileCount.xml" count="36" />
+      <entry feature="spring.SpringFacetInspection.ConfigureFileSetFix" count="2" />
+    </counts>
+  </component>
+</application>
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+  <component name="NotificationConfiguration">
+    <notification groupId="Clean artifact" />
+    <notification groupId="FindInPath" displayType="TOOL_WINDOW" shouldLog="false" />
+    <notification groupId="Grape" />
+    <notification groupId="External Executable Critical Failures" displayType="STICKY_BALLOON" />
+    <notification groupId="Git Minor Notifications" />
+    <notification groupId="Git Important Messages" displayType="STICKY_BALLOON" />
+    <notification groupId="Git Messages" displayType="TOOL_WINDOW" />
+    <notification groupId="Maven Import" displayType="STICKY_BALLOON" />
+    <notification groupId="Compiler" displayType="NONE" />
+    <notification groupId="IDE Usage Statistics" displayType="STICKY_BALLOON" shouldLog="false" />
+    <notification groupId="Framework Detection" />
+    <notification groupId="Groovy DSL errors" />
+    <notification groupId="Android Property Files Updating" />
+    <notification groupId="Execution" displayType="NONE" />
+    <notification groupId="Test Runner" displayType="NONE" />
+    <notification groupId="OSGi important errors" displayType="STICKY_BALLOON" />
+    <notification groupId="Vcs Important Messages" displayType="STICKY_BALLOON" />
+    <notification groupId="Vcs Minor Notifications" shouldLog="false" />
+    <notification groupId="Plugin Error" />
+    <notification groupId="Update Checker" displayType="STICKY_BALLOON" />
+    <notification groupId="Eclipse code formatter info" shouldLog="false" />
+    <notification groupId="Eclipse code formatter error" />
+    <notification groupId="Spring Configuration Check" displayType="STICKY_BALLOON" />
+    <notification groupId="Database view" displayType="TOOL_WINDOW" />
+    <notification groupId="Database refactoring log" displayType="NONE" />
+    <notification groupId="Database editor log" displayType="NONE" />
+    <notification groupId="HotSwap" displayType="TOOL_WINDOW" />
+    <notification groupId="Debugger messages" displayType="TOOL_WINDOW" shouldLog="false" />
+    <notification groupId="OSGi Important Messages" displayType="STICKY_BALLOON" />
+    <notification groupId="Node.js Project Detector" />
+    <notification groupId="Node.js Boilerplate Project Generator" displayType="STICKY_BALLOON" />
+    <notification groupId="Maven" />
+    <notification groupId="JavaScript Library Management" displayType="STICKY_BALLOON" />
+    <toolWindow group="Git Messages" />
+    <toolWindow group="FindInPath" />
+    <toolWindow group="Database view" />
+    <toolWindow group="HotSwap" />
+    <toolWindow group="Debugger messages" />
+    <toolWindow group="Find in Path" />
+    <toolWindow group="Vcs Messages" />
+  </component>
+</application>
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+  <component name="EclipseCodeFormatterSettings">
+    <option name="settingsList">
+      <list>
+        <Settings>
+          <option name="defaultSettings" value="true" />
+          <option name="id" value="1386825630859" />
+          <option name="name" value="default" />
+          <option name="pathToConfigFileJava" value="D:/dev/JetBrains/HPCC_Formatter.xml" />
+          <option name="selectedJavaProfile" value="HPCC" />
+        </Settings>
+        <Settings>
+          <option name="formatter" value="ECLIPSE" />
+          <option name="id" value="1386898065109" />
+          <option name="name" value="HPCC" />
+          <option name="pathToConfigFileJava" value="D:/dev/JetBrains/HPCC_Formatter.xml" />
+          <option name="selectedJavaProfile" value="HPCC" />
+        </Settings>
+      </list>
+    </option>
+  </component>
+</application>
+
