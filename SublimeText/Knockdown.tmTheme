@@ -22,11 +22,11 @@
 				<key>foreground</key>
 				<string>#080808</string>
 				<key>invisibles</key>
-				<string>#4B4B7E3D</string>
+				<string>#404040</string>
 				<key>lineHighlight</key>
-				<string>#2463B41F</string>
+				<string>#7B10552B</string>
 				<key>selection</key>
-				<string>#EDDF2780</string>
+				<string>#ba44e76d</string>
 			</dict>
 		</dict>
 		<dict>
