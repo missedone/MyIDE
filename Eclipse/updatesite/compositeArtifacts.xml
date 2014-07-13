@@ -9,12 +9,18 @@
     <!-- ALM plugins -->
     <!-- egit -->
     <child location="http://download.eclipse.org/egit/updates"/>
+    <!--
     <child location="http://download.eclipse.org/technology/subversive/1.0/update-site/"/>
     <child location="http://community.polarion.com/projects/subversive/download/eclipse/3.0/update-site/"/>
     <child location="http://community.polarion.com/projects/subversive/download/integrations/update-site/"/>
+    -->
     <!-- m2e -->
-    <child location="http://download.eclipse.org/technology/m2e/releases"/>
-    <child location="http://download.eclipse.org/m2e-wtp/releases/"/>
+    <child location="http://download.eclipse.org/technology/m2e/milestones/1.5"/>
+    <child location="http://download.eclipse.org/m2e-wtp/snapshots/luna"/>
+    <!--
+    <child location="http://download.eclipse.org/m2e-wtp/milestones/luna/1.1.0"/>
+    <child location="http://nexus.tesla.io:8081/nexus/content/sites/m2e.extras/m2e/1.5.0/N/LATEST/"/>
+    -->
     <!-- mylyn -->
     <child location="http://download.eclipse.org/mylyn/releases/latest"/>
     <!--
@@ -27,16 +33,13 @@
     <child location="http://andrei.gmxhome.de/eclipse/"/>
     <child location="http://propedit.sourceforge.jp/eclipse/updates/"/>
     <child location="https://sourceforge.net/projects/bluetools/files/navigatorext/updatesite/nax_1.1.2.201201311435/"/>
-    <!-- dltk for ruby 
-    <child location="http://download.eclipse.org/technology/dltk/updates-dev/4.0-nightly/"/>
-    -->
-    <!-- jboss tools 
+    <!-- jboss tools -->
     <child location="http://download.jboss.org/jbosstools/builds/nightly/trunk/latest/all/repo/"/>
-    -->
     <!-- grep console -->
     <child location="http://eclipse.schedenig.name"/>
     <!-- jee -->
-    <child location="http://download.eclipse.org/releases/maintenance"/>
-    <child location="http://download.eclipse.org/eclipse/updates/3.8-M-builds"/>
+    <!-- themes -->
+    <child location="https://raw.github.com/jeeeyul/eclipse-themes/master/net.jeeeyul.eclipse.themes.updatesite/"/>
+    <child location="https://raw.github.com/guari/eclipse-ui-theme/master/com.github.eclipseuitheme.themes.updatesite" />
   </children>
 </repository>
